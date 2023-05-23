@@ -11,11 +11,11 @@ import {
 } from "./Icons";
 import { motion } from "framer-motion";
 
-const CustomLink = ({ href, tittle, className = "" }) => {
+const CustomLink = ({ href, tittle, target, className = "" }) => {
   const router = useRouter();
 
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} target={target} className={`${className} relative group`}>
       {tittle}
 
       <span
@@ -38,9 +38,10 @@ const NavBar = () => {
         <CustomLink href="/projects" tittle="Projects" className="mx-4" />
         <CustomLink href="/certificate" tittle="Certificate" className="mx-4" />
         <CustomLink
-          href="/fb.com/alfathjoz"
-          tittle="Timeline"
+          href="https://polywork.com"
+          tittle="Timeline^"
           className="ml-4"
+          target={"_blank"}
         />
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
