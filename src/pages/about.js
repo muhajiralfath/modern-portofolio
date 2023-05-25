@@ -56,7 +56,11 @@ const about = () => {
               <ul className="list-disc ml-4">
                 <li>
                   Email -{" "}
-                  <a href="mailto:muhammadmuhajiralfath@gmail.com">
+                  <a
+                    href="mailto:muhammadmuhajiralfath@gmail.com"
+                    target="_blank"
+                    className="underline"
+                  >
                     muhammadmuhajiralfath@gmail.com
                   </a>
                 </li>
@@ -67,7 +71,7 @@ const about = () => {
                     target="_blank"
                     className="underline"
                   >
-                    https://facebook.com/muhajiralfath
+                    https://facebook.com/alfathjoz
                   </a>{" "}
                 </li>
                 <li>
