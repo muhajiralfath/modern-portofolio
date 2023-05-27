@@ -15,7 +15,8 @@ const about = () => {
         <Layout className="pt-14">
           <AnimatedText text="Muhammad Muhajir Al Fath" className="mb-16" />
           <div className="flex flex-col space-y-24 items-center justify-center self-center">
-            <div className="h-max round-2xl items-center  ">
+            <div className="h-max round-2xl items-center relative ">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
               <Image
                 src={profilPictdua}
                 width={500}

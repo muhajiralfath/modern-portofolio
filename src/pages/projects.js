@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { FeaturedProject } from "@/components/FeaturedProject";
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import Project from "@/components/Project";
 
 const projects = () => {
   return (
@@ -27,11 +28,54 @@ const projects = () => {
                 type="FeaturedProject"
               />
             </div>
-            <div className="col-span-6">Project-1</div>
-            <div className="col-span-6">Project-2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">Project-3</div>
-            <div className="col-span-6">Project-4</div>
+            <div className="col-span-6">
+              <Project
+                tittle="Crypto Screener Aplication"
+                img={project1}
+                link="/projects"
+                github="/projects"
+                type="FeaturedProject"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                tittle="Crypto Screener Aplication"
+                img={project1}
+                link="/projects"
+                github="/projects"
+                type="FeaturedProject"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                tittle="Crypto Screener Aplication"
+                img={project1}
+                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
+                          It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                          local currency."
+                link="/projects"
+                github="/projects"
+                type="FeaturedProject"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                tittle="Crypto Screener Aplication"
+                img={project1}
+                link="/projects"
+                github="/projects"
+                type="FeaturedProject"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                tittle="Crypto Screener Aplication"
+                img={project1}
+                link="/projects"
+                github="/projects"
+                type="FeaturedProject"
+              />
+            </div>
           </div>
         </Layout>
       </main>
