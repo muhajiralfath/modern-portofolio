@@ -11,18 +11,18 @@ const about = () => {
         <title>About | Alfath.dev</title>
         <meta name="description" content="Fullstack Softfare Engineer" />
       </Head>
-      <main className="flex w-full items-center flex-col justify-center">
+      <main className="flex w-full items-center flex-col justify-center dark:text-light">
         <Layout className="pt-14">
           <AnimatedText text="Muhammad Muhajir Al Fath" className="mb-16" />
           <div className="flex flex-col space-y-24 items-center justify-center self-center">
             <div className="h-max round-2xl items-center relative ">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+              {/* <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" /> */}
               <Image
                 src={profilPictdua}
                 width={500}
                 height={500}
                 alt="Alfath.dev"
-                className=" rounded-2xl border-2 border-solid border-dark bg-light p-6"
+                className=" rounded-2xl border-2 border-solid border-dark border-r-[12px] border-b-[12px] bg-light dark:bg-dark dark:border-light p-6"
               />
             </div>
             <div className=" flex flex-col items-start justify-start">

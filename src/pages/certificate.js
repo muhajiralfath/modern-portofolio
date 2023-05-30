@@ -14,7 +14,7 @@ const certificate = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-6">
           <AnimatedText text="Certificate" className="mb-16 " />
-          <ul className="grid grid-cols-4 gap-16">
+          <ul className="grid grid-cols-4 gap-12">
             {certifData.map((data) => (
               <CertificateCard
                 key={data.id}

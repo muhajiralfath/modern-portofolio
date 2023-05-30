@@ -6,7 +6,11 @@ const FramerImage = motion(Image);
 
 const CertificateCard = ({ img, tittle, platform, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-ligh border border-solid border-dark rounded-2xl border-r-8 border-b-8">
+    <li
+      className="relative col-span-1 w-full p-4 bg-ligh border border-solid border-dark rounded-2xl border-r-8 border-b-8
+    dark:border-light dark:border-r-[1px] dark:border-b-[1px]
+    "
+    >
       <Link
         href={link}
         target="_blank"
@@ -22,12 +26,14 @@ const CertificateCard = ({ img, tittle, platform, link }) => {
           transition={{ duration: 0.2 }}
         />
       </Link>
-      <hr class="border border-solid border-dark border-opacity-50 mb-2" />
+      <hr class="border border-solid border-dark border-opacity-50 mb-2 dark:border-light" />
 
-      <span className="text-primary font-medium">{platform}</span>
+      <span className="text-primary font-medium dark:text-primaryDark">
+        {platform}
+      </span>
 
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-lg font-bold my-2 hover:underline">
+        <h2 className="capitalize text-lg font-bold my-2 hover:underline dark:text-light ">
           {tittle}
         </h2>
       </Link>
