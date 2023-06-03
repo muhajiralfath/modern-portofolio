@@ -7,8 +7,8 @@ const FramerImage = motion(Image);
 
 const Project = ({ tittle, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl " />
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl " />
 
       <Link
         href={link}
@@ -20,23 +20,29 @@ const Project = ({ tittle, type, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-ful text-left text-3xl font-bold">{tittle}</h2>
+          <h2 className="my-2 w-ful text-left text-3xl dark:text-light font-bold">
+            {tittle}
+          </h2>
         </Link>
 
         <div className="w-full mt-2 flex items-center justify-between ">
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline"
+            className="text-lg font-semibold underline dark:text-light"
           >
             Visit
           </Link>

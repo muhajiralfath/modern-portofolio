@@ -23,6 +23,8 @@ const about = () => {
                 height={500}
                 alt="Alfath.dev"
                 className=" rounded-2xl border-2 border-solid border-dark border-r-[12px] border-b-[12px] bg-light dark:bg-dark dark:border-light p-6"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className=" flex flex-col items-start justify-start">

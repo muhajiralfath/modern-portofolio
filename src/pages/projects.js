@@ -12,7 +12,7 @@ const projects = () => {
         <title>Projects | Alfath.dev</title>
         <meta name="description" content="Project description" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center ">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light ">
         <Layout className="pt-6">
           <AnimatedText text="Imagination Trumps Knowledge" className="mb-16" />
           <div className="grid grid-cols-12 gap-24">
