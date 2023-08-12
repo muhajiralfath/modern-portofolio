@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Image from "next/image";
-import profilPictdua from "../../public/images/profile/developer-pic-2.jpg";
+import profilPictdua from "../../public/images/profile/ppp.png";
 
 const about = () => {
   return (
