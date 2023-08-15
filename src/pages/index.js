@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
-import profilPic from "../../public/images/profile/developer-pic-1.png";
+import profilPic from "../../public/images/profile/newava.png";
 import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -18,11 +18,11 @@ export default function Home() {
       <main className="flex items-center text-black w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:p-9 sm:p-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
-            <div className="w-1/2 md:w-full">
+            <div className="w-1/2 md:w-full flex items-center flex-col">
               <Image
                 src={profilPic}
                 alt="alfathdev"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className=" h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
